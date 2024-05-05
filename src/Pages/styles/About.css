@@ -1,0 +1,20 @@
+.About-li {
+    display: flex;
+    flex-direction: column;
+}
+
+.About-li > * {
+    margin-bottom: 7px; /* Добавляем отступ между элементами */
+}
+
+@media screen and (max-width: 500px) {
+    .About-li > * {
+        margin-bottom: 5px; /* Добавляем отступ между элементами */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .About-li > * {
+        margin-bottom: 3px; /* Добавляем отступ между элементами */
+    }
+}

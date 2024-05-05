@@ -1,0 +1,26 @@
+.Header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;/* Высота контейнера равна высоте видимой области экрана */
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.Header-name {
+    color: #282c34;
+}
+
+.hidden {
+    display: none;
+}
+
+.Header-logo {
+    max-width: 150px; /* Регулируйте размер по необходимости */
+    margin: 20px; /* Добавляем отступ вокруг изображения */
+    border-radius: 50%;
+}
+
+.Who-I-Am{
+    color: #282c34;
+}
