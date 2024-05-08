@@ -1,8 +1,16 @@
 from fastapi import FastAPI, HTTPException
-
+from starlette.middleware.cors import CORSMiddleware
 from dbdata.getInfo import get_main_data
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Разрешает все источники
+    allow_credentials=True,
+    allow_methods=["*"],  # Разрешает все методы
+    allow_headers=["*"],  # Разрешает все заголовки
+)
 
 
 @app.get("/")
