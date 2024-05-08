@@ -5,7 +5,7 @@ function Footer(){
         <div className="Footer-container">
             <div className="Mother-column">
                 <div className="Mother-column-item">
-                    
+                    <a href=""></a>
                 </div>
                 <div className="Mother-column-item">
 

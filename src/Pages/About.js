@@ -13,23 +13,16 @@ function About(){
                 }
                 return response.json();
             })
-            .then(jsonData => {
-                // Преобразование массива массивов в массив объектов
-                const transformedData = jsonData.data.map(item => ({
-                    id: item[0],
-                    head: item[1],
-                    text: item[2]
-                }));
-                setData(transformedData); // Обновление состояния data новыми данными с сервера
-            })
+            .then(data => setData(data.data))
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
     }, []);
+    console.log(data)
     return(
         <>
             <div className="About-li">
-                {data.map((item,index)=>(
+                {data.map((item)=>(
                     <AboutInfoTemplate key={item.id} head={item.head} text={item.text} />
                 ))}
 
