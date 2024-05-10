@@ -1,0 +1,127 @@
+.hidden{
+    display:none;
+}
+
+
+.footer-container{
+    display:flex;
+    width: 100%;
+    background-color: #282c34;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+}
+
+.column-item {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.last{
+    margin-bottom: 20px;
+}
+
+.column-icon{
+    height: auto;
+    width: 25%;
+}
+
+.whatsapp{
+    background-color: #2aa71b;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.column-href{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gmail{
+    background-color: #701F19;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.vk{
+    background-color: #4169E1;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.github{
+    background-color: #000000;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.column-mother{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 1025px) {
+    .footer-container {
+        padding-top: 40px;
+    }
+
+    .icon-container {
+        width: 80%;
+    }
+
+    .column-icon {
+        width: 40%;
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        padding-top: 30px;
+    }
+
+    .icon-container {
+        width: 80%;
+    }
+
+    .column-icon {
+        width: 40%;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+    .footer-container {
+        padding-top: 20px;
+    }
+
+    .icon-container {
+        width: 90%;
+    }
+
+    .column-item {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .column-icon {
+        width: 50%;
+    }
+}

@@ -6,6 +6,7 @@ import Header from "./templates/Header";
 import Relocation from "./templates/Relocation";
 import Approval from "./Pages/Approval";
 import Publications from "./Pages/Publications";
+import Footer from "./templates/Footer";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path="/approval" element={<Approval />}/>
               <Route path="/publications" element={<Publications />} />
           </Routes>
+          <Footer/>
       </BrowserRouter>
     </>
   );
