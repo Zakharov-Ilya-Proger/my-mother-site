@@ -7,6 +7,19 @@
     margin-bottom: 7px; /* Добавляем отступ между элементами */
 }
 
+.About-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.button-tuda{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 @media screen and (max-width: 500px) {
     .About-li > * {
         margin-bottom: 5px; /* Добавляем отступ между элементами */

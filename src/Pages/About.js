@@ -1,5 +1,4 @@
 import AboutInfoTemplate from "../templates/About-info-template";
-import {Link} from "react-router-dom";
 import "./styles/About.css"
 import {useEffect, useState} from "react";
 
@@ -19,17 +18,13 @@ function About(){
             });
     }, []);
     return(
-        <>
+        <div className="About-page">
             <div className="About-li">
                 {data.map((item)=>(
                     <AboutInfoTemplate key={item.id} head={item.head} text={item.text} />
                 ))}
-
-                <Link to="/ji">
-                    <button className="error-button">Туда</button>
-                </Link>
             </div>
-        </>
+        </div>
     );
 }
 
