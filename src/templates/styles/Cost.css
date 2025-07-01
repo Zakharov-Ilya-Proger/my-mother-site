@@ -1,0 +1,236 @@
+p {
+    margin: 0;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-cell, .text-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+.icon-cell img {
+    display: block;
+    margin: 0 auto;
+}
+
+.h2-cost {
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.icon {
+    display: inline-block;
+    transition: transform 0.3s;
+    transform-origin: center;
+}
+
+.open .icon {
+    transform: rotate(360deg);
+}
+
+.open .icon.minus {
+    transform: rotate(360deg);
+}
+
+h1.open {
+    cursor: pointer;
+}
+
+.cost {
+    margin: 0 15px;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s, margin 1s;
+    word-wrap: break-word;
+    text-align: justify-all;
+    font-size: 1.6rem;
+}
+
+.cost-text{
+    text-align: justify-all;
+    font-size: 1.6rem;
+    margin: 0 0 10px 5px;
+}
+
+.cost.open {
+    transition: max-height 1s, margin 1s;
+    margin: 10px 15px;
+    max-height: 10000px;
+}
+
+.CostTemplate {
+    background-color: #232124;
+    border-radius: 20px;
+    width: 75%;
+    margin: 0 auto 8px auto;
+}
+
+.costs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Добавьте отступы между блоками, если необходимо */
+}
+
+.iconer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-cost{
+    margin: 0 0 0 0;
+}
+
+.correction{
+    font-size: 1.4rem;
+}
+
+.describe{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.correction-of-text{
+    font-size: 1.6rem;
+}
+
+.texter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 1000000000px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.pict {
+    max-width: 100px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.preis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+
+    .texter{
+        font-size: 1.4rem;
+    }
+
+    .CostTemplate {
+        border-radius: 15px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .text-cell{
+        font-size: 1.4rem;
+    }
+
+    .pict{
+        max-width: 75px;
+    }
+    .cost.open {
+        font-size: 2rem;
+        margin: 0 12px;
+    }
+
+    .CostTemplate {
+        width: 90%;
+    }
+
+    .cost-text{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.2rem;
+        margin: 0 6px;
+    }
+
+    .texter{
+        font-size: 1.2rem;
+    }
+
+    .correction-of-text{
+        font-size: 1.2rem;
+    }
+
+    .iconer{
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    .coster{
+        margin-bottom: 5px;
+    }
+
+    .CostTemplate {
+        border-radius: 20px;
+    }
+
+    .cost.open {
+        font-size: 2rem;
+        margin: 0 10px;
+    }
+
+    .CostTemplate {
+        width: 95%;
+    }
+
+    .pict{
+        max-width: 50px;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    .cost-text{
+        font-size: 1.1rem;
+    }
+}
+

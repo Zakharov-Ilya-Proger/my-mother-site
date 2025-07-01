@@ -10,24 +10,58 @@
 .About-page{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
 }
 
-.button-tuda{
+.about-link {
+    cursor: pointer;
+    text-decoration: none;
+    width: 75%;
+}
+
+.about-button {
+    padding: 10px 20px;
+    background-color: #232124;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Buttons{
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+    .About-li > * {
+        margin-bottom: 5px; /* Добавляем отступ между элементами */
+    }
+
+    .about-button{
+        border-radius: 15px;
+    }
+
+    .about-link{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .About-li > * {
-        margin-bottom: 5px; /* Добавляем отступ между элементами */
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .About-li > * {
         margin-bottom: 3px; /* Добавляем отступ между элементами */
+    }
+
+    .about-button{
+        border-radius: 20px;
+    }
+
+    .about-link{
+        width: 95%;
     }
 }

@@ -1,0 +1,94 @@
+.icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contacts-h1{
+    background-color: #232124;
+}
+
+.mother-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-item {
+    margin-top: 10px;
+    background-color: #232124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.whatsapp {
+    border-radius: 10px;
+    width: 75%;
+}
+
+.gmail {
+    border-radius: 10px;
+    width: 75%;
+}
+
+.ContactsTemplate {
+    background-color: #232124;
+    border-radius: 20px;
+    width: 75%;
+    margin: 0 auto 8px auto;
+}
+
+.text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+
+.text.open {
+    max-height: 1000px; /* Достаточно большое значение для отображения всего содержимого */
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+
+    .ContactsTemplate {
+        border-radius: 15px;
+    }
+
+    .text {
+        font-size: 0.9rem;
+        margin: 0 12px;
+    }
+
+    .ContactsTemplate {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.2rem;
+        margin: 0 6px;
+    }
+
+    .ContactsTemplate {
+        border-radius: 20px;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        margin: 0 10px;
+    }
+
+    .ContactsTemplate {
+        width: 95%;
+    }
+}

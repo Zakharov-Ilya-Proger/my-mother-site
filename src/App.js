@@ -11,7 +11,7 @@ import Footer from "./templates/Footer";
 
 function App() {
   return (
-    <>
+    <div className={"Body"}>
       <BrowserRouter>
           <Header />
           <Routes>
@@ -23,7 +23,7 @@ function App() {
           </Routes>
           <Footer/>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

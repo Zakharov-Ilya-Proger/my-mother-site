@@ -1,9 +1,9 @@
-p{
+p {
     margin: 0;
 }
 
 h1 {
-    color: antiquewhite;
+    color: #C5B4AC;
     cursor: pointer;
     position: relative;
     font-size: 2rem;
@@ -28,42 +28,44 @@ h1.open {
     cursor: pointer;
 }
 
-.text {
+.textt {
     margin: 0 15px;
-    color: antiquewhite;
+    color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s, margin 1s;
     word-wrap: break-word;
+    text-align: justify-all;
+    font-size: 1.6rem;
 }
 
-.text.open {
+.textt.open {
     transition: max-height 1s, margin 1s;
-    margin: 10px 15px;
-    max-height: 100px;
+    max-height: 100000000px;
+    padding: 5px/* Установите значение, которое гарантированно больше высоты контента */
 }
-
 
 .AboutInfoTemplate {
-    background-color: #282c34;
+    background-color: #232124;
     border-radius: 20px;
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 8px auto;
+
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 750px) {
     h1 {
         font-size: 1.5rem;
         margin: 0 8px;
     }
 
-    .AboutInfoTemplate{
+    .AboutInfoTemplate {
         border-radius: 15px;
     }
 
-    .text {
-        font-size: 0.8rem;
-        margin: 0 12px;
+    .textt.open {
+        font-size: 1.4rem;
+        margin: 0 8px;
     }
 
     .AboutInfoTemplate {
@@ -71,19 +73,19 @@ h1.open {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media (max-width: 500px) {
     h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin: 0 6px;
     }
 
-    .AboutInfoTemplate{
-        border-radius: 12px;
+    .AboutInfoTemplate {
+        border-radius: 20px;
     }
 
-    .text {
-        font-size: 0.6rem;
-        margin: 0 10px;
+    .textt.open {
+        font-size: 1.2rem;
+        margin: 0 5px;
     }
 
     .AboutInfoTemplate {

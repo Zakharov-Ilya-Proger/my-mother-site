@@ -1,16 +1,18 @@
 import "./styles/Header.css";
-import { useLocation } from "react-router-dom";
-import logo from "../ref/photo_2024-04-26_01-34-34.jpg"; // Убедитесь, что путь к изображению корректен
+import {Link, useLocation} from "react-router-dom";
+import logo from "../ref/photo_for_header.jpg";
 
 function Header() {
     const location = useLocation().pathname.slice(1);
 
     return (
-        <div className={location === 'error' ? 'hidden' : 'Header-container'}>
-            <img src={logo} alt="Logo" className="Header-logo"/>
-            <h1 className="Header-name">Juli Zakharova</h1>
-            <h1 className="Who-I-Am">Клинический психолог <br/>
-                Когнитивно-поведенческий психотерапевт</h1>
+        <div className={location !== '' && location !== 'publications' ? 'hidden' : 'Header-container'}>
+            <Link to={"/"}>
+                <img src={logo} alt="Logo" className="Header-logo"/>
+            </Link>
+            <h1 className="Header-name"><b>Юлия Захарова</b></h1>
+            <h1 className="Who-I-Am"><br/>Клинический психолог <br/>
+                Когнитивно-поведенческая психотерапия</h1>
         </div>
     );
 }

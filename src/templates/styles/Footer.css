@@ -1,24 +1,25 @@
-.hidden{
-    display:none;
-}
-
-
-.footer-container{
-    display:flex;
+.footer-container {
+    margin-top: 10px;
+    display: flex;
     width: 100%;
-    background-color: #282c34;
+    background-color: #232124;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-top: 20px;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 75%;
+    width: 40%;
 }
 
 .column-item {
@@ -26,55 +27,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 75%;
 }
 
-.last{
-    margin-bottom: 20px;
-}
-
-.column-icon{
+.column-icon {
     height: auto;
     width: 25%;
 }
 
-.whatsapp{
-    background-color: #2aa71b;
+.whatsapp {
+    background-color: #232124;
     border-radius: 10px;
     width: 75%;
 }
 
-.column-href{
+.column-href {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.gmail{
-    background-color: #701F19;
-    border-radius: 10px;
-    width: 75%;
+.icons{
+    display: flex;
+    margin-bottom: 20px;
+
 }
 
-.vk{
-    background-color: #4169E1;
-    border-radius: 10px;
-    width: 75%;
-}
-
-.github{
-    background-color: #000000;
-    border-radius: 10px;
-    width: 75%;
-}
-
-.column-mother{
+.column-row {
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+}
+
+.icons-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+}
+
+.column-item-dev{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.developer-row{
+    width: 50%;
+    display: flex;
     flex-direction: column;
+    filter: blur(0.5px);
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.naming{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.copyright{
+    font-size: 0.7em;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 1025px) {
@@ -83,7 +107,7 @@
     }
 
     .icon-container {
-        width: 80%;
+        width: 60%;
     }
 
     .column-icon {
@@ -98,7 +122,7 @@
     }
 
     .icon-container {
-        width: 80%;
+        width: 55%;
     }
 
     .column-icon {
@@ -112,8 +136,12 @@
         padding-top: 20px;
     }
 
+    .naming{
+        font-size: 0.7rem;
+    }
+
     .icon-container {
-        width: 90%;
+        width: 80%;
     }
 
     .column-item {

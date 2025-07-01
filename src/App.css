@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 .App {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  background-color: #D4CDC3;
+}
+
+.Body{
+  background-color: #D4CDC3;
+  font-family: "Mingzat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.xxeder{
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .App-logo {

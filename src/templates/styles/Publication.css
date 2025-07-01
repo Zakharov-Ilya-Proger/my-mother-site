@@ -1,0 +1,46 @@
+.publication-link{
+    text-decoration: none;
+    color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publication-body{
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.name-of-publication{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 750px) {
+    .name-of-publication{
+        font-size: 1.4rem;
+    }
+    .publication-body{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .publication-body{
+        font-size: 0.7rem;
+    }
+
+    .name-of-publication{
+        font-size: 1.1rem;
+    }
+}

@@ -1,40 +1,96 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Цвет фона как для блоков в AboutInfoTemplate */
-    color: #f0f0f0; /* Цвет текста как в блоках в AboutInfoTemplate */
-    font-family: Arial, sans-serif; /* Шрифт текста */
-}
-
 .approval-container {
-    background-color: #282c31;
+    background-color: #232124; /* Цвет фона как в AboutInfoTemplate */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.approval-info {
+    width: 70%;
+    max-width: 800px; /* Ограничение максимальной ширины для лучшего отображения на больших экранах */
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .approval-title {
     font-size: 3rem;
-    color: #f0f0f0;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .approval-message {
     font-size: 1.5rem;
+    color: white; /* Цвет текста как в блоках в AboutInfoTemplate */
     margin-bottom: 20px;
+    word-wrap: break-word; /* Перенос слов */
+    text-align: justify; /* Выравнивание текста по ширине */
 }
 
 .approval-link {
-    cursor: pointer;
     text-decoration: none;
 }
 
 .approval-button {
     padding: 10px 20px;
-    background-color: #282c31;
-    color: #f0f0f0;
+    background-color: #232124; /* Цвет фона как в AboutInfoTemplate */
+    color: white; /* Цвет текста как в блоках в AboutInfoTemplate */
     border-radius: 5px;
     cursor: pointer;
-    border-color: #f0f0f0;
+    border: 1px solid white; /* Цвет границы как в блоках в AboutInfoTemplate */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.approval-button:hover {
+    background-color: white; /* Цвет фона при наведении */
+    color: #282c34; /* Цвет текста при наведении */
+}
+
+@media (max-width: 750px) {
+    .approval-container {
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .approval-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .approval-message {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .approval-info {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .approval-container {
+        min-height: 100vh;
+        padding: 5px;
+    }
+
+    .approval-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .approval-message {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .approval-info {
+        width: 95%;
+    }
 }

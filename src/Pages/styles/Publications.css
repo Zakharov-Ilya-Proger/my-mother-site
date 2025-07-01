@@ -1,0 +1,44 @@
+.publications-Page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.publication-li{
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #232124;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.science-publication{
+    color: #282c34;
+    margin: 20px;
+}
+
+a{
+    text-decoration: None;
+    cursor: pointer;
+}
+
+.psychologies{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+    .publication-li{
+        width: 85%;
+    }
+
+    .science-publication{
+        font-size: 1.7rem;
+    }
+}
