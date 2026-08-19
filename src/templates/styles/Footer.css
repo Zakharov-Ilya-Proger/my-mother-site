@@ -2,7 +2,7 @@
     margin-top: 10px;
     display: flex;
     width: 100%;
-    background-color: #232124;
+    background-color: #2A4480;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-top: 20px;
@@ -36,7 +36,7 @@
 }
 
 .whatsapp {
-    background-color: #232124;
+    background-color: #2A4480;
     border-radius: 10px;
     width: 75%;
 }

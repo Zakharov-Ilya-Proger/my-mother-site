@@ -70,8 +70,6 @@ h1.open {
     margin: 0 0 10px 5px;
 }
 
-li:not(:last-child) { margin-bottom: 10px; }
-
 .cost.open {
     transition: max-height 1s, margin 1s;
     margin: 10px 15px;

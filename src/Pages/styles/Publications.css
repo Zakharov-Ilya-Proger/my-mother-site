@@ -10,7 +10,7 @@
 .publication-li{
     border-radius: 15px;
     padding: 30px;
-    background-color: #232124;
+    background-color: #2A4480;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .science-publication{
-    color: #282c34;
+    color: #2A4480;
     margin: 20px;
 }
 

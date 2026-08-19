@@ -1,5 +1,5 @@
 .approval-container {
-    background-color: #232124; /* Цвет фона как в AboutInfoTemplate */
+    background-color: #2A4480; /* Цвет фона как в AboutInfoTemplate */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@
 
 .approval-button {
     padding: 10px 20px;
-    background-color: #232124; /* Цвет фона как в AboutInfoTemplate */
+    background-color: #2A4480; /* Цвет фона как в AboutInfoTemplate */
     color: white; /* Цвет текста как в блоках в AboutInfoTemplate */
     border-radius: 5px;
     cursor: pointer;

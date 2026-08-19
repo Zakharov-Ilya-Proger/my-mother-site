@@ -3,6 +3,7 @@ import "./styles/About.css"
 import {Link} from "react-router-dom";
 import ContactsTemplate from "../templates/contacts-template";
 import Cost from "../templates/Cost";
+import CoolCost from "../templates/CoolCost";
 
 function About(){
 
@@ -16,6 +17,7 @@ function About(){
                     <Link to="/approval" className={"about-link"}>
                         <div className={"about-button"}><h1>Информированное согласие</h1></div>
                     </Link>
+                    <CoolCost head={"Супервизии"} />
                     <Link to="/publications" className={"about-link"}>
                         <div className={"about-button"}><h1>Мои публикации</h1></div>
                     </Link>

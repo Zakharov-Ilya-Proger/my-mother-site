@@ -9,16 +9,14 @@
 }
 
 .publication-body{
-    border: 1px solid white;
     border-radius: 15px;
-    margin-bottom: 15px;
     padding: 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    text-align: center;
+    text-align: start;
 }
 
 .name-of-publication{

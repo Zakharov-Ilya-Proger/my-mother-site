@@ -10,12 +10,12 @@ function Footer(){
                 </div>
                 <p className={"copyright"}>ИП Захарова Юлия Владимировна</p>
                 <p className={"copyright"}><b>ИНН</b>: 772822852781 <b>ОГРНИП</b>: 318774600385770</p>
-                <p className={"copyright"}>© 2024 Клинический психолог Юлия Захарова</p>
-                <a href={"https://vk.com/zakharovik.proger"} className="column-href">
-                    <div className={"column-item-dev"}>
-                        <p className={"naming"}>ЗахаровStudio</p>
-                    </div>
-                </a>
+                <p className={"copyright"}>© {new Date().getFullYear()} Клинический психолог Юлия Захарова</p>
+                {/*<a href={"https://vk.com/zakharovik.proger"} className="column-href">*/}
+                {/*    <div className={"column-item-dev"}>*/}
+                {/*        <p className={"naming"}>ЗахаровStudio</p>*/}
+                {/*    </div>*/}
+                {/*</a>*/}
             </div>
         </div>
     )

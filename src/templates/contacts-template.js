@@ -26,9 +26,9 @@ function ContactsTemplate({ head }) {
             <div ref={textRef} className={`text ${IsOpen ? 'open' : ''}`}>
                 <div className="mother-row">
                     <div className={"icons"}>
-                        <a href={"whatsapp://send?phone=79036291409&amp;text="} className="column-href">
+                        <a href={"https://t.me/Zakharova_J"} className="column-href">
                             <div className="column-item whatsapp">
-                                <h1 className={"contacts-h1"}>WhatsApp</h1>
+                                <h1 className={"contacts-h1"}>Telegram</h1>
                             </div>
                         </a>
                         <a href={"mailto:zlata10@list.ru?Subject=Hello%20again"} className="column-href">

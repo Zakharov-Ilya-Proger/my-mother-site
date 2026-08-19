@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="413" preserveAspectRatio="none" viewBox="0 0 1440 413">
     <g mask="url(&quot;#SvgjsMask1339&quot;)" fill="none">
-        <rect width="20000" height="413" x="0" y="0" fill="rgba(35, 33, 36, 1)"></rect>
-        <path d="M 0,258 C 96,240.6 288,148.6 480,171 C 672,193.4 768,369.4 960,370 C 1152,370.6 1344,213.2 1440,174L1440 413L0 413z" fill="#73666D"></path>
-        <path d="M 0,188 C 144,226 432,398.6 720,378 C 1008,357.4 1296,143.6 1440,85L1440 413L0 413z" fill="#D4CDC3"></path>
+        <rect width="20000" height="413" x="0" y="0" fill="#2A4480"></rect>
+        <path d="M 0,258 C 96,240.6 288,148.6 480,171 C 672,193.4 768,369.4 960,370 C 1152,370.6 1344,213.2 1440,174L1440 413L0 413z" fill="#4B68AB"></path>
+        <path d="M 0,188 C 144,226 432,398.6 720,378 C 1008,357.4 1296,143.6 1440,85L1440 413L0 413z" fill="#6C8CD5"></path>
     </g>
     <defs>
         <mask id="SvgjsMask1339">

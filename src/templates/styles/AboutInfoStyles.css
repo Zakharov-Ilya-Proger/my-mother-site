@@ -3,7 +3,7 @@ p {
 }
 
 h1 {
-    color: #C5B4AC;
+    color: #6C8CD5;
     cursor: pointer;
     position: relative;
     font-size: 2rem;
@@ -46,7 +46,7 @@ h1.open {
 }
 
 .AboutInfoTemplate {
-    background-color: #232124;
+    background-color: #2A4480;
     border-radius: 20px;
     width: 75%;
     margin: 0 auto 8px auto;
