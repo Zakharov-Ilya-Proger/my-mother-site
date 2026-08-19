@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
 
@@ -26,16 +26,22 @@ jobs:
       - name: Copy .htaccess to build
         run: cp .htaccess build/.htaccess
 
-      - name: Deploy build на хостинг
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Show build contents
+        run: ls -la build/
+
+      - name: Test FTP connection
+        run: |
+          echo "Testing FTP port 21..."
+          nc -vz -w 10 "${{ secrets.FTP_SERVER }}" 21
+
+      - name: Deploy build to Timeweb
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftp
-
           local-dir: build/
           server-dir: react-site/public_html/
-
-          dangerous-clean: true
+          dangerous-clean-slate: true
